@@ -1,11 +1,12 @@
 {
-  "name": "libsignal-implementation",
+  "name": "express-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/app.js",
+    "dev": "nodemon",
+    "start": "ts-node src/app.ts",
     "lint": "eslint . --ext .ts"
   },
   "keywords": [],
@@ -16,5 +17,9 @@
     "@typescript-eslint/parser": "^5.27.0",
     "eslint": "^8.17.0",
     "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "ts-node": "^10.9.1"
   }
 }
